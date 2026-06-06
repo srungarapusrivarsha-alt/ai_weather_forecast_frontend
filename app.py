@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-Server_loc= "http://127.0.0.1:8000"
+Server_loc= st.secrets["server_url"].rstrip("/")
 
 st.title("🌤 AI Weather Agent")
 
